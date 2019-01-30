@@ -111,6 +111,7 @@
   cursor: pointer;
   transform: translate(-50%);
   background-color: white;
+  display: none;
 }
 .article .toggle-on {
   display: block;
