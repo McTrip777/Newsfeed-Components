@@ -9,3 +9,14 @@ const menu = document.querySelector('.menu');
 const menuButton = document.querySelector('.menu-button');
 // Using your menuButton reference, add a click handler that calls toggleMenu
 menuButton.addEventListener('click', toggleMenu);
+
+const hover = document.querySelectorAll('.menu li');
+hover[0].addEventListener('mouseover', e =>{
+	e.target.style.color = "white";
+	e.target.style.backgroundColor = "black";
+setTimeout(function() {
+  e.target.style.color = "";
+  e.target.style.backgroundColor = "";
+
+	}, 1000);
+}, false);
